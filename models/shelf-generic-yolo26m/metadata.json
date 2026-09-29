@@ -1,0 +1,23 @@
+{
+  "classes": [
+    "product",
+    "gap"
+  ],
+  "dataset": "data/datasets/shelf-generic",
+  "imgsz": 1024,
+  "conf": {
+    "product": 0.402,
+    "gap": 0.258
+  },
+  "test_at_conf": {
+    "product": {
+      "precision": 0.913,
+      "recall": 0.907
+    },
+    "gap": {
+      "precision": 0.784,
+      "recall": 0.759
+    }
+  },
+  "note": "conf = mejor F1 por clase en el test de shelf-generic (runs/shelf-generic-yolo26m/test-1024)"
+}

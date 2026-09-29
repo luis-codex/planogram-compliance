@@ -1,0 +1,44 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Caches de herramientas
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Secretos / variables de entorno
+.env
+.env.*
+
+# Editores y SO
+.idea/
+.DS_Store
+*.swp
+
+# Config local de Claude Code (personal, no se comparte)
+.claude/settings.local.json
+
+# Datos y artefactos pesados (se regeneran con los notebooks)
+data/raw/
+data/datasets/
+runs/
+outputs/
+train.log
+*.pt
+*.onnx
+*.engine
+
+# models/: se ignoran los pesos pero se versiona la documentación y metadata
+models/**
+!models/**/
+!models/README.md
+!models/**/metadata.json

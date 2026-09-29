@@ -1,0 +1,235 @@
+{
+	"gondola_id": "gondola_gaseosas",
+	"categoria": "Gaseosas",
+	"tienda": "Tienda demo 001",
+	"vigente_desde": "2026-10-01",
+	"foto_referencia": "data/samples/949823489234.png",
+	"dimensiones_cm": {
+		"alto": 150
+	},
+	"convenciones": {
+		"sku": "MARCA-PRODUCTO-VARIANTE-TAMAÑO (ej. COC-COL-ZER-2L = Coca-Cola, cola, Zero, 2 L)",
+		"modulo": "columna de la góndola, numerada de izquierda a derecha (la foto muestra un solo módulo)",
+		"nivel": "estante dentro del módulo, 1 = el de abajo",
+		"grupos": "productos del estante de izquierda a derecha; sin posición exacta, solo el orden",
+		"frentes": "cantidad de productos visibles de frente, uno al lado del otro",
+		"ancho_cm": "ancho aproximado de cada producto; se usa para repartir el estante en proporción"
+	},
+	"productos": {
+		"COC-COL-REG-2L": {
+			"nombre": "Coca-Cola 2 L",
+			"marca": "Coca-Cola",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"COC-COL-ZER-2L": {
+			"nombre": "Coca-Cola Zero 2 L",
+			"marca": "Coca-Cola",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"COC-COL-DIE-2L": {
+			"nombre": "Diet Coke 2 L",
+			"marca": "Coca-Cola",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"COC-COL-DSC-2L": {
+			"nombre": "Diet Coke sin cafeína 2 L",
+			"marca": "Coca-Cola",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"COC-CER-REG-2L": {
+			"nombre": "Coca-Cola Cherry 2 L",
+			"marca": "Coca-Cola",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"COC-CER-ZER-2L": {
+			"nombre": "Coca-Cola Cherry Zero 2 L",
+			"marca": "Coca-Cola",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"SPR-LIM-REG-2L": {
+			"nombre": "Sprite 2 L",
+			"marca": "Sprite",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"SPR-LIM-ZER-2L": {
+			"nombre": "Sprite Zero 2 L",
+			"marca": "Sprite",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"FAN-NAR-REG-2L": {
+			"nombre": "Fanta naranja 2 L",
+			"marca": "Fanta",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"DRP-ORI-REG-2L": {
+			"nombre": "Dr Pepper 2 L",
+			"marca": "Dr Pepper",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"DRP-ORI-DIE-2L": {
+			"nombre": "Diet Dr Pepper 2 L",
+			"marca": "Dr Pepper",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"SEA-GIN-REG-2L": {
+			"nombre": "Seagram's Ginger Ale 2 L",
+			"marca": "Seagram's",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"CAN-GIN-REG-2L": {
+			"nombre": "Canada Dry Ginger Ale 2 L",
+			"marca": "Canada Dry",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"7UP-LIM-REG-2L": {
+			"nombre": "7UP 2 L",
+			"marca": "7UP",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"NES-LIM-REG-2L": {
+			"nombre": "Nestea limón 2 L",
+			"marca": "Nestea",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"NES-LIM-DIE-2L": {
+			"nombre": "Nestea limón diet 2 L",
+			"marca": "Nestea",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"SUN-NAR-REG-2L": {
+			"nombre": "Sunkist naranja 2 L",
+			"marca": "Sunkist",
+			"ancho_cm": 11,
+			"alto_cm": 32
+		},
+		"SIN-IDENTIFICAR": {
+			"nombre": "Botella cortada en el borde de la foto",
+			"marca": null,
+			"ancho_cm": 11,
+			"alto_cm": 32
+		}
+	},
+	"modulos": [
+		{
+			"modulo": 1,
+			"estantes": [
+				{
+					"nivel": 1,
+					"grupos": [
+						{
+							"sku": "COC-COL-REG-2L",
+							"frentes": 3
+						},
+						{
+							"sku": "FAN-NAR-REG-2L",
+							"frentes": 3
+						},
+						{
+							"sku": "COC-COL-ZER-2L",
+							"frentes": 1
+						},
+						{
+							"sku": "NES-LIM-REG-2L",
+							"frentes": 1
+						},
+						{
+							"sku": "NES-LIM-DIE-2L",
+							"frentes": 1
+						},
+						{
+							"sku": "SPR-LIM-ZER-2L",
+							"frentes": 1
+						},
+						{
+							"sku": "SUN-NAR-REG-2L",
+							"frentes": 6
+						}
+					]
+				},
+				{
+					"nivel": 2,
+					"grupos": [
+						{
+							"sku": "COC-COL-DIE-2L",
+							"frentes": 4
+						},
+						{
+							"sku": "COC-CER-ZER-2L",
+							"frentes": 2
+						},
+						{
+							"sku": "COC-CER-REG-2L",
+							"frentes": 2
+						},
+						{
+							"sku": "DRP-ORI-DIE-2L",
+							"frentes": 1
+						},
+						{
+							"sku": "COC-COL-DSC-2L",
+							"frentes": 1
+						},
+						{
+							"sku": "SPR-LIM-ZER-2L",
+							"frentes": 2
+						},
+						{
+							"sku": "CAN-GIN-REG-2L",
+							"frentes": 4
+						}
+					]
+				},
+				{
+					"nivel": 3,
+					"grupos": [
+						{
+							"sku": "COC-COL-REG-2L",
+							"frentes": 3
+						},
+						{
+							"sku": "COC-COL-ZER-2L",
+							"frentes": 2
+						},
+						{
+							"sku": "SPR-LIM-REG-2L",
+							"frentes": 2
+						},
+						{
+							"sku": "DRP-ORI-REG-2L",
+							"frentes": 2
+						},
+						{
+							"sku": "SEA-GIN-REG-2L",
+							"frentes": 3
+						},
+						{
+							"sku": "7UP-LIM-REG-2L",
+							"frentes": 3
+						},
+						{
+							"sku": "SIN-IDENTIFICAR",
+							"frentes": 1
+						}
+					]
+				}
+			]
+		}
+	],
+	"Transform": "AWS::Serverless-2016-10-31"
+}

@@ -1,0 +1,41 @@
+[project]
+name = "computer-vision"
+version = "0.1.0"
+description = "PoC de planogram compliance con Ultralytics YOLO26"
+readme = "README.md"
+authors = [
+    { name = "luis tenorio", email = "luisprograming0@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ultralytics>=8.4",
+    "torch>=2.8",
+    "torchvision>=0.23",
+    "pillow",
+    "numpy",
+    "pandas",
+    "matplotlib",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab",
+    "ipykernel",
+    "ipywidgets",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "planogram"
