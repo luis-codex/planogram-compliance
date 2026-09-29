@@ -31,6 +31,23 @@ src/planogram/
 
 Las carpetas `data/datasets/`, `models/`, `runs/` y `outputs/` no van a git (pesan GB).
 
+## Dataset recomendado: SKU-110K
+
+Para entrenar el detector de productos se recomienda
+[SKU-110K](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/SKU-110K.yaml)
+([docs](https://docs.ultralytics.com/datasets/detect/sku-110k/)): fotos reales de góndolas retail con productos muy juntos.
+Ultralytics lo descarga automáticamente la primera vez que se entrena con él (~13.6 GB):
+
+```python
+from ultralytics import YOLO
+
+model = YOLO("models/pretrained/yolo26m.pt")
+model.train(data="SKU-110K.yaml", epochs=100, imgsz=640)
+```
+
+SKU-110K solo anota productos (una única clase, sin `gap`). Para detectar huecos hay que
+complementarlo con un dataset propio como `shelf-generic`.
+
 ## Planogramas
 
 Cada góndola es una matriz de **módulos** (columnas) × **estantes** (niveles), y cada estante tiene posiciones con SKU, ubicación y frentes:
