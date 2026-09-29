@@ -42,3 +42,6 @@ models/**
 !models/**/
 !models/README.md
 !models/**/metadata.json
+
+# Config local de Serena MCP
+.serena/
