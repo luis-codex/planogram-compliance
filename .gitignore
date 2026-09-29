@@ -31,7 +31,7 @@ wheels/
 data/raw/
 data/datasets/
 runs/
-outputs/
+*.tex
 train.log
 *.pt
 *.onnx
